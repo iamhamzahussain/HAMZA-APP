@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function OuterFunction() {
+            const name = "Jasmin";
+            const city = "Hyderabad";
+            function InnerFunction() {
+                const empid = 300;
+                console.log(name + "is from" + city + "and Employee ID is" + empid);
+
+            }
+            InnerFunction();
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="OuterFunction()">Call My Function</button>
+</body>
+
+</html>
